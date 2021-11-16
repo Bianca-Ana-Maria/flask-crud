@@ -9,6 +9,7 @@ app.secret_key = "Secret Key"
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:''@localhost/flask'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
+
 db = SQLAlchemy(app)
 
 class Data(db.Model):
